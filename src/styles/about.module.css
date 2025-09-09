@@ -1,0 +1,62 @@
+.pre {
+  background-color: var(--main-bg);
+  color: var(--text-color);
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  white-space: pre-wrap; /* Allows text wrapping */
+  word-wrap: break-word; /* Allows long words to be broken and wrap to the next line */
+}
+
+.lineContainer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.lineNumber {
+  width: 30px;
+  text-align: right;
+  margin-right: 16px;
+  color: var(--line-number-color);
+  user-select: none; /* Prevents line numbers from being selected */
+  flex-shrink: 0;
+}
+
+.code {
+  white-space: pre-wrap; /* Allows text wrapping */
+}
+
+/* Syntax highlighting */
+.doctype {
+  color: var(--doctype-color);
+}
+.tag {
+  color: var(--tag-color);
+}
+.attr-name {
+  color: var(--attr-name-color);
+}
+.attr-value {
+  color: var(--attr-value-color);
+}
+.punctuation {
+  color: var(--punctuation-color);
+}
+.plain {
+  color: var(--plain-color);
+  max-width: 60rem;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .pre {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .lineNumber {
+    width: 20px;
+    margin-right: 8px;
+  }
+}
